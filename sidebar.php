@@ -6,7 +6,20 @@
         <?php $this->options->weiboShow() ?>
     </div>
     </section>
-    <hr class="solid" />
+    <?php endif; ?>
+
+    <?php if ($this->is('post')): ?>
+        <?php if (empty($this->options->sidebarBlock) || in_array('ShowRelatedPosts', $this->options->sidebarBlock)): ?>
+        <section class="widget">
+            <h3><?php _e('相关文章'); ?></h3>
+            <?php $this->related(5)->to($relatedPosts); ?>
+            <ul>
+            <?php while ($relatedPosts->next()): ?>
+                <li><a href="<?php $relatedPosts->permalink(); ?>" title="<?php $relatedPosts->title(); ?>"><?php $relatedPosts->title(); ?></a></li>
+            <?php endwhile; ?>
+            </ul>
+        </section>
+        <?php endif; ?>
     <?php endif; ?>
 
     <?php if (empty($this->options->sidebarBlock) || in_array('ShowRecentPosts', $this->options->sidebarBlock)): ?>
@@ -26,8 +39,23 @@
         <ul class="widget-list">
         <?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
         <?php while($comments->next()): ?>
-            <li><a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>：<?php $comments->excerpt(35, '...'); ?></li>
+            <li><?php $comments->author(false); ?>：<a href="<?php $comments->permalink(); ?>"><?php $comments->excerpt(35, '...'); ?></a></li>
         <?php endwhile; ?>
+        </ul>
+    </section>
+    <hr class="solid" />
+    <?php endif; ?>
+
+    <?php if (empty($this->options->sidebarBlock) || in_array('ShowTags', $this->options->sidebarBlock)): ?>
+    <section class="widget">
+    		<h3 class="widget-title"><?php _e('标签云'); ?></h3>
+        <ul>
+            <?php $this->widget('Widget_Metas_Tag_Cloud', 'ignoreZeroCount=1&limit=20')->to($tags); ?>
+            <?php if($tags->have()): ?>
+            <?php while($tags->next()): ?>
+            <a style="color:rgb(<?php echo(rand(0,255)); ?>,<?php echo(rand(0,255)); ?>, <?php echo(rand(0,255)); ?>)" href="<?php $tags->permalink(); ?>" class="size-<?php $tags->split(5, 10, 20, 30); ?>"><?php $tags->name(); ?></a>
+            <?php endwhile; ?>
+            <?php endif; ?>
         </ul>
     </section>
     <hr class="solid" />
@@ -52,6 +80,16 @@
             ->parse('<li><a href="{permalink}">{date}</a></li>'); ?>
         </ul>
 	</section>
+    <hr class="solid" />
+    <?php endif; ?>
+
+    <?php if (empty($this->options->sidebarBlock) || in_array('ShowLinks', $this->options->sidebarBlock)): ?>
+    <section class="widget">
+        <h3 class="widget-title"><?php _e('友情链接'); ?></h3>
+        <ul>
+            <?php Links_Plugin::output("SHOW_TEXT", 5); ?>
+        </ul>
+    </section>
     <hr class="solid" />
     <?php endif; ?>
 

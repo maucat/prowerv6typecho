@@ -10,12 +10,16 @@ function themeConfig($form) {
     $form->addInput($weiboShow);
     
     $sidebarBlock = new Typecho_Widget_Helper_Form_Element_Checkbox('sidebarBlock', 
-    array('ShowRecentPosts' => _t('显示最新文章'),
-    'ShowRecentComments' => _t('显示最近回复'),
+    array(
+    'ShowRecentPosts' => _t('显示最新文章'),
+    'ShowRelatedPosts' => _t('显示相关文章'), 
+    'ShowRecentComments' => _t('显示最近回复'), 
+    'ShowTags' => _t('显示标签云'), 
     'ShowCategory' => _t('显示分类'),
     'ShowArchive' => _t('显示归档'),
+    'ShowLinks' => _t('显示友情链接(需要友情链接插件)'),
     'ShowOther' => _t('显示其它杂项')),
-    array('ShowRecentPosts', 'ShowRecentComments', 'ShowCategory', 'ShowArchive', 'ShowOther'), _t('侧边栏显示'));
+    array('ShowRecentPosts', 'ShowRelatedPosts', 'ShowRecentComments', 'ShowTags', 'ShowArchive', 'ShowOther'), _t('侧边栏显示'));
     
     $form->addInput($sidebarBlock->multiMode());
 }
