@@ -7,6 +7,7 @@
             ->parse('<li><a href="{permalink}">{title}</a></li>'); ?>
         </ul>
     </section>
+    <hr class="solid" />
     <?php endif; ?>
 
     <?php if (empty($this->options->sidebarBlock) || in_array('ShowRecentComments', $this->options->sidebarBlock)): ?>
@@ -19,6 +20,7 @@
         <?php endwhile; ?>
         </ul>
     </section>
+    <hr class="solid" />
     <?php endif; ?>
 
     <?php if (empty($this->options->sidebarBlock) || in_array('ShowCategory', $this->options->sidebarBlock)): ?>
@@ -29,6 +31,7 @@
             ->parse('<li><a href="{permalink}">{name}</a> ({count})</li>'); ?>
         </ul>
 	</section>
+    <hr class="solid" />
     <?php endif; ?>
 
     <?php if (empty($this->options->sidebarBlock) || in_array('ShowArchive', $this->options->sidebarBlock)): ?>
@@ -39,6 +42,7 @@
             ->parse('<li><a href="{permalink}">{date}</a></li>'); ?>
         </ul>
 	</section>
+    <hr class="solid" />
     <?php endif; ?>
 
     <?php if (empty($this->options->sidebarBlock) || in_array('ShowOther', $this->options->sidebarBlock)): ?>
@@ -56,5 +60,6 @@
             <li><a href="http://www.typecho.org">Typecho</a></li>
         </ul>
 	</section>
+    <hr class="solid" />
     <?php endif; ?>
 </aside>

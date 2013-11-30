@@ -9,7 +9,7 @@ Description: A Simple WordPress Theme
 */
 body,h1,h2,h3,h4,h5,h6,hgroup,p,blockquote,dl,dt,dd,ul,ol,li,button,input,textarea {margin: 0; padding: 0;}
 header,footer,article,section,nav,menu,hgroup {display:block;}
-body {font-family:"Microsoft Yahei",Tahoma, Helvetica, Arial, "SimSun", sans-serif; font-size:100%; line-height:1.6; background:#f0f0f0 url(images/bg.jpg) repeat; -webkit-text-size-adjust:none;}
+body {font-family:"Microsoft Yahei",Tahoma, Helvetica, Arial, "SimSun", sans-serif; font-size:100%; line-height:1.6; background:#f0f0f0; -webkit-text-size-adjust:none;}
 h1,h2,h3,h4,h5,h6 {line-height:1em;}
 h1 {font-size:1.5em;}
 h2 {font-size:1.4em;}
@@ -26,14 +26,24 @@ a {color:#0078aa; text-decoration:none;}
 a:hover {text-decoration:underline;}
 ol,ul {list-style:none;}
 p,h1,h2,h3,h4,h5,h6,address,blockquote,pre {margin-bottom:1em;}
-hr {
-  background-image: -moz-linear-gradient(left center , transparent, rgba(0, 0, 0, 0.3), transparent);
-  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
-  border: 0 none;
-  height: 1px;
-  margin: 18px 0;
+hr.dashed {
+border-color: #CCC #FFF #FFF #FFF;
+border-style: dashed none dashed;
+border-width: 1px 0;
+height: 1px;
+margin-left: 0;
+margin-right: 0;
+margin-top: 18px;
 }
-hr.soften { height:2px;}
+hr.solid {
+border-color: #CCC #FFF #FFF #FFF;
+border-style: solid none;
+border-width: 1px 0;
+height: 1px;
+margin-left: 0;
+margin-right: 0;
+margin-top: 0px;
+}
 input,textarea,button {outline:none;}
 input[type="text"],input[type="email"],input[type="url"],input[type="password"],textarea {box-shadow:inset 2px 3px 5px #eee; border:1px solid #bbb; background:#fafafa;}
 input:focus,textarea:focus {background:#fff; border-color:#999;}
@@ -240,8 +250,7 @@ blockquote p:last-child,.comment-list blockquote p:last-child {margin-bottom:0;}
 /*Sidebar*/
 #sidebar {font-size:0.8em;}
 #sidebar h2 {font-size:1.2em;}
-#sidebar .widget {display:inline-table; vertical-align:top; width:30.3%; margin:3% 1.5%; padding-top:2%; border-top:1px solid #ccc; position:relative;}
-#sidebar .widget::after {content:""; display:block; height:0; width:100%; border-top:1px solid #fff; position:absolute; top:0;}
+#sidebar .widget {display:inline-table; vertical-align:top; width:30.3%; margin:3% 1.5%; padding-top:2%; position:relative;}
 .widget li {margin-bottom:0.5em;}
 #wp-calendar {width:100%; position:relative; background:#fff;}
 #wp-calendar caption {background:rgb(180,180,180); border:1px solid rgb(154,154,154); box-shadow:inset 1px 1px rgb(225,225,225); color:rgb(255,255,255); text-shadow:1px 1px rgb(100,100,100); line-height:36px; height:36px;}

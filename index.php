@@ -32,7 +32,7 @@
             <div class="post-content">
     			<?php $this->content('阅读详细 &raquo;'); ?>
             </div>
-        <hr class="soften" />
+        <hr class="dashed" />
         </section>
     <?php endwhile; ?>
     </article>
