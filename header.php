@@ -10,6 +10,8 @@
 
     <!-- 使用url函数转换相关路径 -->
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>" />
+    <link rel="shortcut icon" href="<?php $this->options->siteUrl('favicon.ico'); ?>">
+    <link href='http://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
 
     <!--[if lt IE 9]>
     <script src="<?php $this->options->adminUrl('js/html5shiv.js'); ?>"></script>
@@ -30,13 +32,13 @@
                         </a>
                     <?php endif; ?>
                     
-			<h1><a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a></h1>
+			<h1 id="wordlogo"><a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a></h1>
 			<h2><?php $this->options->description() ?></h2>
 		</hgroup>
 		<div id="toolbar">
 			<div id="rss"><a href="<?php $this->options->feedUrl(); ?>" title="RSS Feed">RSS</a></div>
                 <form id="searchform" method="post" action="./">
-                    <input type="text" name="s" id="s" size="30" placeholder="<?php _e('输入关键字搜索'); ?>" autocomplete="off" required />
+                    <input type="text" name="s" id="s" size="30" placeholder="<?php _e('Search'); ?>" autocomplete="off" required />
                     <button type="submit"><?php _e('搜索'); ?></button>
                 </form>
 		</div>
