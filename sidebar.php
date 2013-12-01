@@ -1,10 +1,17 @@
 <aside id="sidebar">
 
+    <?php if ($this->options->aboutText): ?>
+    <section class="widget">
+        <h3><?php _e('关于我'); ?></h3>
+        <?php $this->options->aboutText() ?>
+    </section>
+    <hr class="solid" />
+    <?php endif; ?>
+
     <?php if ($this->options->weiboShow): ?>
     <section class="widget">
-    <div class="widget">
+        <h3><?php _e('微博'); ?></h3>
         <?php $this->options->weiboShow() ?>
-    </div>
     </section>
     <?php endif; ?>
 
@@ -19,6 +26,7 @@
             <?php endwhile; ?>
             </ul>
         </section>
+        <hr class="solid" />
         <?php endif; ?>
     <?php endif; ?>
 
