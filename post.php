@@ -11,7 +11,9 @@
         </article>
         <footer id="post_footer">
                 <span class="icon icon_tag" title="标签"></span>
-                <?php $this->tags(', ', true, '无标签'); ?>
+                <span class="label">
+                    <?php $this->tags('</span> <span class="label">', true, '无标签'); ?>
+                </span>
         </footer>
     </div>
 	<?php $this->need('comments.php'); ?>
