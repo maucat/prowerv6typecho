@@ -33,7 +33,7 @@
                     <?php endif; ?>
                     
 			<h1 id="wordlogo"><a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a></h1>
-			<h2><?php $this->options->description() ?></h2>
+			<h2 id="desc"><?php $this->options->description() ?></h2>
 		</hgroup>
 		<div id="toolbar">
 			<div id="rss"><a href="<?php $this->options->feedUrl(); ?>" title="RSS Feed">RSS</a></div>
