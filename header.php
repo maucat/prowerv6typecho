@@ -25,16 +25,20 @@
 
 <header id="header">
 	<div id="header_box">
-		<hgroup>
                     <?php if ($this->options->logoUrl): ?>
                         <a id="logo" href="<?php $this->options->siteUrl(); ?>">
                         <img src="<?php $this->options->logoUrl() ?>" alt="<?php $this->options->title() ?>" />
                         </a>
                     <?php endif; ?>
-                    
 			<h1 id="wordlogo"><a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a></h1>
+
+                    <?php if ($this->options->quotes): ?>
+                    <?php $quotes = explode("\n", $this->options->quotes); ?>
+                    <?php $show_quotes =  $quotes[ mt_rand(0, count($quotes)-1 )]; ?>
+			<h2 id="desc"><?php echo $show_quotes ?></h2>
+                    <?php else : ?>
 			<h2 id="desc"><?php $this->options->description() ?></h2>
-		</hgroup>
+                    <?php endif; ?>
 		<div id="toolbar">
 			<div id="rss"><a href="<?php $this->options->feedUrl(); ?>" title="RSS Feed">RSS</a></div>
                 <form id="searchform" method="post" action="./">

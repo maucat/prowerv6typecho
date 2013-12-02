@@ -13,7 +13,11 @@ function themeConfig($form) {
     $aboutText = new Typecho_Widget_Helper_Form_Element_Textarea('aboutText', NULL, NULL, _t('自我介绍'), _t('在这里填写一段自我介绍的说明文字显示在侧边栏顶部，可使用HTML标签'));
     $form->addInput($aboutText);
 
+    $quotes = new Typecho_Widget_Helper_Form_Element_Textarea('quotes', NULL, NULL, _t('随机名言'), _t('在这里写上随机名言，用来在标题下展示，否则展示网站描述'));
+    $form->addInput($quotes);
+    
     $sidebarBlock = new Typecho_Widget_Helper_Form_Element_Checkbox('sidebarBlock', 
+
     array(
     'ShowRecentPosts' => _t('显示最新文章'),
     'ShowRelatedPosts' => _t('显示相关文章'), 
