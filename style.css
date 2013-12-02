@@ -102,13 +102,13 @@ blockquote p:last-child,.comment-list blockquote p:last-child {margin-bottom:0;}
 .post .alignright {margin:0.5em 0 0 0.5em;}
 .post .aligncenter {margin:0.5em auto;}
 /*Header*/
-#header {background:#0067aa url(images/blue_bg.png) repeat; border-bottom:1px solid #005b97; box-shadow:0 1px 5px #003f68; width:100%; padding:5% 0; color:#90d5ff; text-shadow:1px 1px #005b97; z-index:1; position:relative;}
+#header {background:#0067aa url(images/blue_bg.png) repeat; border-bottom:1px solid #005b97; box-shadow:0 1px 5px #003f68; width:100%; padding:4% 0; color:#90d5ff; text-shadow:1px 1px #005b97; z-index:1; position:relative;}
 #header_box {position:relative;}
 #header h1 {font-size:2em; margin-bottom:0.6em;}
 #header h1 a {color:#fff; text-decoration:none;}
 #header h2 {font-size:1em; font-weight:400; margin-bottom:0;}
 /*Toolbar*/
-#toolbar {height:24px; font-size:0.8em; position:absolute; right:0; bottom:0;}
+#toolbar {height:24px; font-size:0.8em; position:absolute; right:0; top:30px;}
 #searchform {border:1px solid #005b97; background-color:rgba(0,112,183,.6); border-radius:3px; box-shadow:inset 1px 1px 2px #00558d,0 1px 1px #0088da; padding:3px 5px; height:16px; float:right;}
 #searchform label {display:none;}
 #searchform input {color:#90d5ff; text-shadow:1px 1px #005b97; border:none; background:none; box-shadow:none; width:150px; height:16px; line-height:16px; vertical-align:top;}
