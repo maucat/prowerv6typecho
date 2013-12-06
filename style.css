@@ -42,6 +42,7 @@ margin-left: 0;
 margin-right: 0;
 margin-top: 47px;
 margin-bottom: 0px;
+min-width:780px;
 }
 hr.solid {
 border-color: #CCC #FFF #FFF #FFF;
@@ -308,7 +309,7 @@ blockquote p:last-child,.comment-list blockquote p:last-child {margin-bottom:0;}
 }
 @media only screen and (min-width:1281px) {
 	#header_box,.nav,#content,#footer_box {width:80%; margin:0 auto; max-width:1150px;}
-	.page,#main {max-width:800px;}
+	.page,#main {max-width:800px;min-width:780px;}
 	#main {float:left;}
 	#sidebar {float:right; width:18%; max-width:250px;}
 	#sidebar .widget {display:block; width:100%; margin:0 0 1em; padding-bottom:1em; padding-top:1em;}
