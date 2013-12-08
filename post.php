@@ -1,10 +1,10 @@
 <?php $this->need('header.php'); ?>
 <div id="main">
     <div class= "post">
-    <span class="icon icon_aside" title="日志"></span>
+    <span class="icon icon_aside" title="文章"></span>
         <header id="post_header">
                 <h1><?php $this->title() ?></h1>
-                <time class="time" datetime="<?php $this->date('Y-m-d'); ?>"><?php $this->date('Y.m.d'); ?></time>
+                <time class="time" datetime="<?php $this->date('Y-m-d'); ?>"><?php $this->date('Y.m.d H:i'); ?></time>
         </header>
         <article id="post_content">
                 <?php $this->content(); ?>

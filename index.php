@@ -28,7 +28,7 @@
                 <span class="icon icon_aside" title="文章"></span>
             <?php endif; ?>
 	<h2 class="post-title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
-	<time class="time" datetime="<?php $this->date('Y-m-d'); ?>"><?php $this->date('Y.m.d'); ?></time>
+	<time class="time" datetime="<?php $this->date('Y-m-d'); ?>"><?php $this->date('Y.m.d H:i'); ?></time>
             <div class="post-content">
     			<?php $this->content('阅读详细 &raquo;'); ?>
             </div>
