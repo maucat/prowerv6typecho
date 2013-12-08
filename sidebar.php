@@ -16,7 +16,7 @@
     <?php endif; ?>
 
     <?php if ($this->is('post')): ?>
-        <?php if (empty($this->options->sidebarBlock) || in_array('ShowRelatedPosts', $this->options->sidebarBlock)): ?>
+        <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRelatedPosts', $this->options->sidebarBlock)): ?>
         <section class="widget">
             <h3><?php _e('相关文章'); ?></h3>
             <?php $this->related(5)->to($relatedPosts); ?>
@@ -30,7 +30,7 @@
         <?php endif; ?>
     <?php endif; ?>
 
-    <?php if (empty($this->options->sidebarBlock) || in_array('ShowRecentPosts', $this->options->sidebarBlock)): ?>
+    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentPosts', $this->options->sidebarBlock)): ?>
     <section class="widget">
 		<h3 class="widget-title"><?php _e('最新文章'); ?></h3>
         <ul class="widget-list">
@@ -41,7 +41,7 @@
     <hr class="solid" />
     <?php endif; ?>
 
-    <?php if (empty($this->options->sidebarBlock) || in_array('ShowRecentComments', $this->options->sidebarBlock)): ?>
+    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentComments', $this->options->sidebarBlock)): ?>
     <section class="widget">
 		<h3 class="widget-title"><?php _e('最近回复'); ?></h3>
         <ul class="widget-list">
@@ -54,7 +54,7 @@
     <hr class="solid" />
     <?php endif; ?>
 
-    <?php if (empty($this->options->sidebarBlock) || in_array('ShowTags', $this->options->sidebarBlock)): ?>
+    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowTags', $this->options->sidebarBlock)): ?>
     <section class="widget">
     		<h3 class="widget-title"><?php _e('标签云'); ?></h3>
         <ul>
@@ -69,7 +69,7 @@
     <hr class="solid" />
     <?php endif; ?>
 
-    <?php if (empty($this->options->sidebarBlock) || in_array('ShowCategory', $this->options->sidebarBlock)): ?>
+    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowCategory', $this->options->sidebarBlock)): ?>
     <section class="widget">
 		<h3 class="widget-title"><?php _e('分类'); ?></h3>
         <ul class="widget-list">
@@ -80,7 +80,7 @@
     <hr class="solid" />
     <?php endif; ?>
 
-    <?php if (empty($this->options->sidebarBlock) || in_array('ShowArchive', $this->options->sidebarBlock)): ?>
+    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowArchive', $this->options->sidebarBlock)): ?>
     <section class="widget">
 		<h3 class="widget-title"><?php _e('归档'); ?></h3>
         <ul class="widget-list">
@@ -91,7 +91,7 @@
     <hr class="solid" />
     <?php endif; ?>
 
-    <?php if (empty($this->options->sidebarBlock) || in_array('ShowLinks', $this->options->sidebarBlock)): ?>
+    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowLinks', $this->options->sidebarBlock)): ?>
     <section class="widget">
         <h3 class="widget-title"><?php _e('友情链接'); ?></h3>
         <ul>
@@ -101,7 +101,7 @@
     <hr class="solid" />
     <?php endif; ?>
 
-    <?php if (empty($this->options->sidebarBlock) || in_array('ShowOther', $this->options->sidebarBlock)): ?>
+    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowOther', $this->options->sidebarBlock)): ?>
 	<section class="widget">
 		<h3 class="widget-title"><?php _e('其它'); ?></h3>
         <ul class="widget-list">

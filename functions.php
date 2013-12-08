@@ -28,7 +28,7 @@ function themeConfig($form) {
     'ShowLinks' => _t('侧边栏显示友情链接(需要友情链接插件)'),
     'ShowfooterLinks' => _t('页脚显示友情链接(需要友情链接插件)'),
     'ShowOther' => _t('显示其它杂项')),
-    array('ShowRecentPosts', 'ShowRelatedPosts', 'ShowRecentComments', 'ShowTags', 'ShowArchive', 'ShowOther'), _t('侧边栏显示'));
+    array('ShowRecentPosts', 'ShowRelatedPosts', 'ShowRecentComments', 'ShowTags', 'ShowCategory', 'ShowArchive', 'ShowLinks', 'ShowfooterLinks', 'ShowOther'), _t('侧边栏显示'));
     
     $form->addInput($sidebarBlock->multiMode());
 }
