@@ -4,10 +4,14 @@
  * 
  * @package Links
  * @author Hanny
- * @version 1.0.4
+ * @version 1.1.0
+ * @dependence 13.10.18-*
  * @link http://www.imhan.com
  *
  * 历史版本
+ * version 1.1.0 at 2013-12-08
+ * 修改支持Typecho 0.9
+
  * version 1.0.4 at 2010-06-30
  * 修正数据表的前缀问题
  * 在Pattern里加上所有的数据表字段
@@ -115,9 +119,8 @@ class Links_Plugin implements Typecho_Plugin_Interface
 					if(('Mysql' == $type && 1054 == $code) ||
 							('SQLite' == $type && ('HY000' == $code || 1 == $code))) {
 						return Links_Plugin::linksUpdate($installDb, $type, $prefix);
-					} else {
-						throw new Typecho_Plugin_Exception('数据表检测失败，友情链接插件启用失败。错误号：'.$code);
 					}
+					throw new Typecho_Plugin_Exception('数据表检测失败，友情链接插件启用失败。错误号：'.$code);
 				}
 			} else {
 				throw new Typecho_Plugin_Exception('数据表建立失败，友情链接插件启用失败。错误号：'.$code);
