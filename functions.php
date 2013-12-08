@@ -25,7 +25,8 @@ function themeConfig($form) {
     'ShowTags' => _t('显示标签云'), 
     'ShowCategory' => _t('显示分类'),
     'ShowArchive' => _t('显示归档'),
-    'ShowLinks' => _t('显示友情链接(需要友情链接插件)'),
+    'ShowLinks' => _t('侧边栏显示友情链接(需要友情链接插件)'),
+    'ShowfooterLinks' => _t('页脚显示友情链接(需要友情链接插件)'),
     'ShowOther' => _t('显示其它杂项')),
     array('ShowRecentPosts', 'ShowRelatedPosts', 'ShowRecentComments', 'ShowTags', 'ShowArchive', 'ShowOther'), _t('侧边栏显示'));
     
