@@ -25,12 +25,14 @@
 
 <header id="header">
 	<div id="header_box">
-                    <?php if ($this->options->logoUrl): ?>
+                        <h1 id="logo">
+                        <?php if ($this->options->logoUrl): ?>
                         <a id="logo" href="<?php $this->options->siteUrl(); ?>">
                         <img src="<?php $this->options->logoUrl() ?>" alt="<?php $this->options->title() ?>" />
                         </a>
                     <?php endif; ?>
-			<h1 id="wordlogo"><a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a></h1>
+                        <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a>
+                        </h1>
 
                     <?php if ($this->options->quotes): ?>
                     <?php $quotes = explode("\n", $this->options->quotes); ?>
