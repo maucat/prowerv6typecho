@@ -5,7 +5,7 @@
  * @package Prower V6 for Typecho
  * @author alter by maucat
  * @version 1.2
- * @link http://soont.com
+ * @link http://vimarch.com
  */
  
  $this->need('header.php');
