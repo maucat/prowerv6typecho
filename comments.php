@@ -6,11 +6,12 @@
     
     <?php $comments->listComments(); ?>
 
+    <?php if (($this->options->commentsPageBreak)): ?>
     <nav class="navigation">
 	<span class="icon icon_page" title="分页"></span>
         <?php $comments->pageNav('&laquo;', '&raquo;'); ?>
     </nav>
-    
+    <?php endif; ?>
     <?php endif; ?>
 
     <?php if($this->allow('comment')): ?>

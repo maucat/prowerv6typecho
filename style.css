@@ -184,7 +184,7 @@ blockquote p:last-child,.comment-list blockquote p:last-child {margin-bottom:0;}
 .post img,.post embed {max-width:100%;}
 .post img {height:auto;}
 /*List*/
-.post ul,.post ol,.post dl,.comment-content ul,.comment-content ol,.comment-content dl {list-style-position:outside; margin-bottom:1em; margin-left:1em;}
+.post ul,.post ol,.post dl,.comment-content ul,.comment-content ol,.comment-content dl {list-style-position:outside; margin-bottom:1em; margin-left:2em;}
 .post ul ul,.post ol ol,.post dl dl,.comment-content ul ul,.comment-content ol ol,.comment-content dl dl {margin-bottom:0;}
 .post ul,.comment-content ul {list-style-type:disc; list-style-position:outside;}
 .post ol,.comment-content ol {list-style-type:decimal;}
