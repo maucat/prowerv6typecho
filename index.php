@@ -39,7 +39,7 @@
 
     <nav class="navigation">
     	<span class="icon icon_page" title="分页"></span>
-        <?php $this->pageNav('&laquo;', '&raquo;'); ?>
+        <?php $this->pageNav('&laquo;', '&raquo;', 1, '...'); ?>
     </nav>
 </div> <!-- end #main-->
 
