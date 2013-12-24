@@ -23,7 +23,15 @@
             <?php elseif ($format == 'gallery') : ?>
                 <span class="icon icon_gallery" title="相册"></span>
             <?php elseif ($format == 'aside') : ?>
-                <span class="icon icon_aside" title="日志"></span>
+                <span class="ico-aside" title="日志"></span>
+            <?php elseif ($format == 'link') : ?>
+                <span class="ico-link" title="链接"></span>
+            <?php elseif ($format == 'quote') : ?>
+                <span class="ico-quote" title="引语"></span>
+            <?php elseif ($format == 'status') : ?>
+                <span class="ico-status" title="心情"></span>
+            <?php elseif ($format == 'chat') : ?>
+                <span class="ico-chat" title="聊天"></span>
             <?php else : ?>
                 <span class="icon icon_aside" title="文章"></span>
             <?php endif; ?>

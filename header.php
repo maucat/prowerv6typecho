@@ -10,6 +10,7 @@
 
     <!-- 使用url函数转换相关路径 -->
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>" />
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('fontello.css'); ?>" />
     <link rel="shortcut icon" href="<?php $this->options->siteUrl('favicon.ico'); ?>">
     <link href='http://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
 

@@ -23,15 +23,15 @@
     		<p><?php _e('登录身份：'); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
             <?php else: ?>
     		<p class="comment-form-author">
-                <label for="author" class="required"><?php _e('昵称'); ?>*</label>
+                <label for="author" class="required"><i class="ico-user"></i></label>
     			<input type="text" name="author" id="author" class="text" value="<?php $this->remember('author'); ?>" />
     		</p>
     		<p class="comment-form-email">
-                <label for="mail"<?php if ($this->options->commentsRequireMail): ?> class="required"<?php endif; ?>><?php _e('电子邮件'); ?>*</label>
+                <label for="email"<?php if ($this->options->commentsRequireMail): ?> class="required"<?php endif; ?>><i class="ico-mail"></i></label>
     			<input type="email" name="mail" id="email" class="text" value="<?php $this->remember('mail'); ?>" />
     		</p>
     		<p class="comment-form-url">
-                <label for="url"<?php if ($this->options->commentsRequireURL): ?> class="required"<?php endif; ?>><?php _e('网站'); ?></label>
+                <label for="url"<?php if ($this->options->commentsRequireURL): ?> class="required"<?php endif; ?>><i class="ico-globe"></i></label>
     			<input type="url" name="url" id="url" class="text" placeholder="<?php _e('http://example.com'); ?>" value="<?php $this->remember('url'); ?>" />
     		</p>
             <?php endif; ?>
