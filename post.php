@@ -1,7 +1,6 @@
 <?php $this->need('header.php'); ?>
 <div id="main">
     <div class= "post">
-    <span class="icon icon_aside" title="文章"></span>
     <?php $format = PostFormat_Plugin::getFormat(); ?>
             <?php if ($format == 'video') : ?>
                 <span class="icon icon_video" title="视频"></span>
