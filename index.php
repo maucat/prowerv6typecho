@@ -4,7 +4,7 @@
  * 
  * @package Prower V6 for Typecho
  * @author alter by maucat
- * @version 1.2
+ * @version 1.3
  * @link http://vimarch.com
  */
  

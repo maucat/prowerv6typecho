@@ -10,7 +10,7 @@ Description: A Simple WordPress Theme
 body,h1,h2,h3,h4,h5,h6,hgroup,p,blockquote,dl,dt,dd,ul,ol,li,button,input,textarea {margin: 0; padding: 0;}
 header,footer,article,section,nav,menu,hgroup {display:block;}
 body {font-family:"Microsoft Yahei",Tahoma, Helvetica, Arial, "SimSun", sans-serif; font-size:100%; line-height:1.6; background:#f0f0f0; -webkit-text-size-adjust:none;}
-input, button, select, textarea { font-family: "Microsoft Yahei",Tahoma,proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;}
+input, button, select, textarea { font-family: Tahoma,proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;}
 h1,h2,h3,h4,h5,h6 {line-height:1em;}
 h1 {font-size:1.5em;}
 h2 {font-size:1.4em;}
