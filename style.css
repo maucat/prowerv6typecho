@@ -126,7 +126,7 @@ blockquote p:last-child,.comment-list blockquote p:last-child {margin-bottom:0;}
 #header h1 a {color:#fff; text-decoration:none;}
 #header h2 {font-size:1em; font-weight:400; margin-bottom:0;}
 /*Toolbar*/
-#toolbar {height:24px; font-size:0.8em; position:absolute; right:0; top:30px;}
+#toolbar {height:24px; font-size:0.8em; position:absolute; right:0; top:10px;}
 #searchform {border:1px solid #005b97; background-color:rgba(0,112,183,.6); border-radius:3px; box-shadow:inset 1px 1px 2px #00558d,0 1px 1px #0088da; padding:3px 5px; height:16px; float:right;}
 #searchform label {display:none;}
 #searchform input {color:#90d5ff; text-shadow:1px 1px #005b97; border:none; background:none; box-shadow:none; width:150px; height:16px; line-height:16px; vertical-align:top;}
@@ -165,7 +165,7 @@ blockquote p:last-child,.comment-list blockquote p:last-child {margin-bottom:0;}
 #post_list h2 a {color:#1B6A93; transition: all 0.3s ease-in-out 0s; -webkit-transition: all 0.3s ease-in-out 0s; }
 #post_list h2 a:hover {color:#4cafb5;text-decoration: none;}
 .post,.page,.navigation,#comments {font-size:1em; position:relative; border-left:3px solid #e9e9e9; padding-left:40px; margin-left:17px;}
-.page,.navigation,#comments {margin-bottom:3em;}
+.navigation,#comments {margin-bottom:3em;}
 .post {padding-bottom:3em;}
 /*ICON*/
 .icon {position:absolute; top:0; left:-14px; width:24px; height:24px; background-color:#e9e9e9; border-radius:15px;}
@@ -202,7 +202,6 @@ blockquote p:last-child,.comment-list blockquote p:last-child {margin-bottom:0;}
 .post ol,.comment-content ol {list-style-type:decimal;}
 .post dt,.comment-content dt {font-weight:700;}
 .post dt,.post dd,.comment-content dt,.comment-content dd {margin-bottom:0.5em;}
-.post input {height:22px; line-height:22px;}
 #post_header,#post_content {margin-bottom:1.5em;}
 #post_header h1 {margin-bottom:0.5em; font-size:1.6em;}
 #post_footer {font-size:0.8em; position:relative;}
@@ -338,7 +337,7 @@ transition: all 0.5s ease-in-out 0s;
 	#sidebar {float:right; width:18%; max-width:250px;}
 	#sidebar .widget {display:block; width:100%; margin:0 0 1em; padding-bottom:1em; padding-top:1em;}
 }
-@media only screen and (max-device-width:568px),only screen and (max-width:568px) {
+@media only screen and (max-device-width:680px),only screen and (max-width:680px) {
 	#header {padding:10% 0;}
 	#linkcat,#sidebar {display:none;}
 	#header_box,.nav,#content,#footer_box {width:92%;}
