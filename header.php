@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>" />
     <link rel="stylesheet" href="<?php $this->options->themeUrl('fontello.css'); ?>" />
     <link rel="shortcut icon" href="<?php $this->options->siteUrl('favicon.ico'); ?>">
-    <link href='http://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
 
     <!--[if lt IE 9]>
     <script src="<?php $this->options->adminUrl('js/html5shiv.js'); ?>"></script>
@@ -55,10 +55,12 @@
                     <div class="nav">
                     <ul>
                         <li<?php if($this->is('index')): ?> class="active"<?php endif; ?>><a href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a></li>
+
                         <?php $this->widget('Widget_Metas_Category_List')->to($categorys); ?>
                         <?php while($categorys->next()): ?>
-                        <li<?php if($this->is('category', $categorys->slug)): ?> class="active"<?php endif; ?>><a href="<?php $categorys->permalink(); ?>" title="<?php $categorys->name(); ?>"><?php $categorys->name(); ?></a></li>
+                        <li<?php if($this->is('post')): ?><?php if($this->category == $categorys->slug): ?> class="active"<?php endif; ?><?php else: ?><?php if ($this->is('category', $categorys->slug)): ?> class="active"<?php endif; ?><?php endif; ?>><a href="<?php $categorys->permalink(); ?>" title="<?php $categorys->name(); ?>"><?php $categorys->name(); ?></a></li>
                         <?php endwhile; ?>
+
                         <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
                         <?php while($pages->next()): ?>
                         <li<?php if($this->is('page', $pages->slug)): ?> class="active"<?php endif; ?>><a href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a></li>
